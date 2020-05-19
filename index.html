@@ -3,12 +3,45 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel = "icon" href ="images/n.png" type = "image/x-icon">
+  <link rel = "icon" href ="images/n.png" type = "image/png">
   <title>Naman Agarwal</title>
-  <link rel="stylesheet" href="CSS/indexStyle.css">
+  <link rel="stylesheet" href="css/indexStyle.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    #mode{
+    cursor:pointer;
+    width:11%;
+    padding:5px;
+    background-color:black;
+    text-align:center;
+    color:white;
+    border-radius:4px;
+    }
+  </style>
+  <script type="text/javascript">
+  function changeMode() {
+    x=document.getElementById('mode')
+    if (x.innerHTML==="Night") {
+        x.innerHTML="Day"
+        document.body.style.backgroundColor = "#3f3f44";
+        document.body.style.color= "white";
+        x.style.backgroundColor= "white";
+        x.style.color= "black";
+    }
+    else if (x.innerHTML==="Day") {
+      x.innerHTML="Night"
+      document.body.style.backgroundColor = "#dae1e7";
+      document.body.style.color= "#16817a";
+      x.style.backgroundColor= "black";
+      x.style.color= "white";
+    }
+
+  }
+
+  </script>
 </head>
 
+<!--body onload="alert('For Better experience use Desktop')"-->
 <body>
   <table cellspacing="20px" cellpadding="10px">
     <tbody>
@@ -18,6 +51,9 @@
           <h1>Naman Agarwal</h1>
           <h4>Student at <em>Techno India Univesity</em></h4>
           <p>I am a<em><strong>&nbspWeb Developer/Designer</strong></em>. I 💗 cooking</p>
+        </td>
+        <td style="width:40%;" align="right">
+          <p id="mode" onclick="changeMode()">Night</p>
         </td>
       </tr>
     </tbody>
