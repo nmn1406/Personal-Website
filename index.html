@@ -37,12 +37,34 @@
     }
 
   }
+  function auto() {
+    var d= new Date()
+    var t= d.getHours();
+    x=document.getElementById('mode')
+    if(t<18){
+      alert("You are visiting this site in Day Mode according to your system time.")
+      x.innerHTML="Night"
+      document.body.style.backgroundColor = "#dae1e7";
+      document.body.style.color= "#16817a";
+      x.style.backgroundColor= "black";
+      x.style.color= "white";
+    }
+    else {
+      alert("You are visiting this site in Night Mode according to your system time.")
+      x.innerHTML="Day"
+      document.body.style.backgroundColor = "#3f3f44";
+      document.body.style.color= "white";
+      x.style.backgroundColor= "white";
+      x.style.color= "black";
+    }
+
+  }
 
   </script>
 </head>
 
 <!--body onload="alert('For Better experience use Desktop')"-->
-<body>
+<body onload="auto()">
   <table cellspacing="20px" cellpadding="10px">
     <tbody>
       <tr>
