@@ -7,6 +7,7 @@
   <title>Naman Agarwal</title>
   <link rel="stylesheet" href="css/indexStyle.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <style>
     #mode{
     cursor:pointer;
@@ -140,7 +141,16 @@
   </tr>
 </table>
 </footer>
-
+  <!--loader code starts here-->
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+<!--ends here-->
+<script>
+  $(window).on("load",function(){
+    $(".loader-wrapper").fadeOut("slow");
+  });
+</script>
 </body>
 
 </html>
