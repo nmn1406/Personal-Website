@@ -12,6 +12,12 @@ body{
   color: #16817a;
 }
 /*loader code starts here*/
+.loading-text{
+  position: absolute;
+  top:55%;
+  right:45.5%;
+  font-size: 1.5rem;
+}
 .loader-wrapper {
 
   width: 100%;
