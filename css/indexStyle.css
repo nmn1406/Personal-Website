@@ -11,6 +11,7 @@ body{
   background-color: #dae1e7;
   color: #16817a;
   overflow:hidden;
+  transition: color 2s , background-color 4s;
 }
 /*loader code starts here*/
 .loading-text{
